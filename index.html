@@ -1,0 +1,500 @@
+<!-- 
+	Straight Outta Programmer's Desk
+	SFIT ROBOCON TEAM 2017
+	Jagdish Chaudhary(CRC 2017)
+	14/06/2017
+-->
+<!DOCTYPE html>
+<html>
+<head><title>Robocon at SFIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.00">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet"/> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="myStyle.css"/>
+<script src="myScript.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script>
+
+$(document).ready(function(){
+	
+	$('#year').on('change', function(){
+		$('.dropdown').hide();
+
+		if(this.value =="2017")
+			$('#year2017').show();
+
+		else if(this.value =="2016")
+			$('#year2016').show();
+
+		else if(this.value =="2015")
+			$('#year2015').show();
+
+		else if(this.value =="2014")
+			$('#year2014').show();
+		
+		else if(this.value =="2013")
+			$('#year2013').show();
+
+		else if(this.value =="2012")
+			$('#year2012').show();
+
+		else if(this.value =="2011")
+			$('#year2011').show();
+
+		else if(this.value =="2010")
+			$('#year2010').show();
+
+		else if(this.value =="2009")
+			$('#year2009').show();
+
+	});
+/*
+	var stickyNavbar = $('.topnav').offset().top;
+
+	$(window).scroll(function(){
+		if ($(window).scrollTop() > stickyNavbar) {
+			$('.topnav').addClass('affix');
+		}
+		else{
+			$('.topnav').removeClass('affix');
+		}
+	});	
+*/
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900,"swing",function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+
+<style>
+	
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <div id="sfitrobocon"><a href="#home"><img src="media/sfitrobocon.png" width="200px"/></a></div>
+  <a href="#aboutus" onclick="myFunction()">About us</a>
+  <a href="#teamsfit" onclick="myFunction()">Team SFIT</a>
+  <a href="#importantlinks" onclick="myFunction()">Important links</a>
+  <a href="#gallery" onclick="myFunction()">Gallery</a>
+  <a href="#sponsorus" onclick="myFunction()">Sponsor us</a>
+  <a href="#contactus" onclick="myFunction()">Contact us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="home"></div>
+<div id="container">
+	<div id="aboutus">
+		<h1>About us</h1>
+
+		<p>
+			ABU ROBOCON was first started in the year 2002.To represent India at international level, national level competition is held every year at Pune in the 1st week of March.
+		</p>
+		<p>
+			ROBOCON is the biggest international robotics competition in Asia-Pacific region. The magnitude of the competition can be judged from the fact that only one team from a country is allowed to participate, with the host being allowed to field 2 teams. 
+		</p>
+		<p>
+			SFIT first participated in the competition in the year 2009 with the initiative of Eric D'Souza, Nimroz Maknojia and Jaison Joseph under the guidance of Mr. Pramod Shanbhag(HOD-INFT) and Mr. Vaqar Ansari(Asst. Professor - EXTC).
+		</p>
+		<p>
+			Since then the SFITians have never looked back and have been improvising on the Bots with every year of participation. In their years of experience, the team has scaled new position and has been considered as a worthy opponent in the competition.
+		</p>
+		<p>
+			For us every problem opens up new dimensions for learning, which we use constructively in succeeding tasks.
+		</p>
+	</div>
+
+	<br>
+
+	<div id="teamsfit">
+	<hr>
+		<h1>Team SFIT</h1>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/coordinator.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Prof. Vaqar Ansari</span>
+			<span class="emailid">vaqar@sfitengg.org</span>
+			<span class="post">Co-ordinator</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/instructor.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Mr. Shamsuddin Khan</span>
+			<span class="emailid">shamsuddinkhan@sfitengg.org</span>
+			<span class="post">Instructor</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/joanne.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Dr. Joanne Gomes</span>
+			<span class="emailid">jgomes@sfitengg.org</span>
+			<span class="post">Faculty member</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/bysani.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Mr. MK Bysani</span>
+			<span class="emailid">mbysani@sfitengg.org</span>
+			<span class="post">Faculty member</span>
+			</div>
+		</div>		
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/crc.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Mayank Sindhwad</span>
+			<span class="emailid">mayankpsindhvad@gmail.com </span>
+			<span class="post">CRC</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/co-crc.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Aaditya Khare</span>
+			<span class="emailid">khareaaditya42@gmail.com</span>
+			<span class="post">Co-CRC</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/treasurer.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Ssapan Patel</span>
+			<span class="emailid">ssapanmpatel@gmail.com </span>
+			<span class="post">Treasurer</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/programmer.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Aditi Pawaskar</span>
+			<span class="emailid">aditipawaskar97@gmail.com </span>
+			<span class="post">Programmer</span>
+			</div>
+		</div>
+		<div class="members">
+			<div class="member_image_container">
+			<img src="media/members/inventory manager.jpg">
+			</div>
+			<div class="memberinfo">
+			<span class="membername">Yashwita Suvarna</span>
+			<span class="emailid">yashwitasuvarna97@gmail.com</span>
+			<span class="post">Inventory Manager</span>
+			</div>
+		</div>
+
+		<div id="prevmembers">
+
+				<div class="formermembers">
+					<span><h3>Former team members</h3></span>
+				</div>
+	
+				<select name="Year" id="year">
+					<option value="notselected" selected>select year</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+					<option value="2012">2012</option>
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+				</select>
+
+				<div id="year2017" class="dropdown">
+					<div>Jagdish Chaudhary (2015-17)</div>
+					<div>Neha Nagarkoti (2015-17)</div>
+					<div>Vishal Shetty (2015-17)</div>
+					<div>Rohan Suresh (2015-17)</div>
+					<div>Nachiket Makwana (2015-17)</div>
+					<div>Faizan Sheikh (2015-17)</div>
+					<div>MOHD. AKIB KAMANI (2016-17)</div>
+					<div>Priyaank Chhadwa (2016-17)</div>	
+				</div>
+				<div id="year2016" class="dropdown">
+					<div>Sushant Shetty (2014-16)</div>
+					<div>Vishal Seshagiri (2014-16)</div>
+					<div>Dhriti Iddya (2014-16)</div>
+					<div>Omkar Manjrekar (2014-16)</div>
+					<div>Ameya Shenoy (2015-16)</div>
+					<div>Kalind Karia (2014-16)</div>
+					<div>Olister Rumao (2015-16)</div>
+					<div>Ashwin Ghosalkar (2015-16)</div>
+				</div>
+				<div id="year2015" class="dropdown">
+					<div>Siddhesh Gotad (2012-15)</div>
+					<div>Jaykumar Patel (2013-17)</div>
+					<div>Vikrant Fernandes (2012-15)</div>
+					<div>Harsh Jain (2013-15)</div>
+					<div>Shamsad Khan (2013-15)</div>
+					<div>Omkar Chavan (2013-15)</div>
+					<div>Kevin D'Souza (2013-15)</div>
+					<div>Aleena Mary Paul (2013-15)</div>
+				</div>
+				<div id="year2014" class="dropdown">
+					<div>Rohit Yadav (2012-14)</div>
+					<div>Prit Zaveri (2012-14)</div>
+					<div>Yogesh Pusarla (2012-14)</div>
+					<div>Shrutika Redkar (2012-14)</div>
+					<div>Neha Kulkarni (2012-14)</div>
+					<div>Rushabh Devalia (2013-14)</div>
+					<div>Rohit Chaudhary (2013-14)</div>
+				</div>
+				<div id="year2013" class="dropdown">
+					<div>Falvian Pegado (2010-13)</div>
+					<div>Stalen Rumao (2010-13)</div>
+					<div>Mithil Raut (2012-13)</div>
+					<div>Santosh Shukla (2012-13)</div>
+				</div>
+				<div id="year2012" class="dropdown">
+					<div>Brian D'souza (2010-12)</div>
+					<div>Atharva Tere (2011-12)</div>
+					<div>Shanu Salunke (2011-12)</div>
+					<div>Isha Shah (2011-12)</div>
+					<div>Akshata Nayak (2011-12)</div>
+					<div>Jaina Prajapati  (2011-12)</div>
+				</div>
+				<div id="year2011" class="dropdown">
+					<div>Ramniklal Mota (2010-12)</div>
+					<div>Rakeshsingh Rana  (2010-12)</div>
+					<div>Nikhit Sankhe (2010-12)</div>
+					<div>Dheeraj Panangat (2010-12)</div>
+					<div>Amar Verma (2010-12)</div>
+				</div>
+				<div id="year2010" class="dropdown">
+					<div>Jay Sawant (2009-11)</div>
+					<div>Dhirendra Yadav (2009-11)</div>
+					<div>Pravin Suthar (2009-10)</div>
+					<div>Prathesh Prajapati (2009-10)</div>
+					<div>Mithun Nayak (2009-10)</div>
+				</div>
+				<div id="year2009" class="dropdown">
+					<div>Eric D'souza</div>
+					<div>Nimroz Maknojia</div>
+					<div>Jaison Joseph</div>
+				</div>
+		</div>
+	</div>	
+
+	<br>
+
+	<div id="importantlinks">
+		<hr>
+		<h1>Important links</h1>	
+		<div class="linkgallery">
+			<img src="media/rulebook/2017.png" title="2017">
+			<div class="description">
+				<div>
+					<a href="http://www.aburobocon.net/asset/pdf/ABU2017_RuleBook.pdf" target="_blank"><i class="material-icons">description</i>Rulebook</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=HJBlM08ohFY" target="_blank"><i class="material-icons">ondemand_video</i>Video</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="linkgallery">
+			<img src="media/rulebook/2016.png" title="2016">
+			<div class="description">
+				<div>
+					<a href="http://www.roboconindia.com/rulebook%202016.pdf" target="_blank"><i class="material-icons">description</i>Rulebook</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=-fqmi_V0wuw" target="_blank"><i class="material-icons">ondemand_video</i>Video</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="linkgallery">
+			<img src="media/rulebook/2015.png" title="2015">
+			<div class="description">
+				<div>
+					<a href="http://www.roboconindia.com/2015/Theme%20and%20Rules%20ABU%20Robocon%202015.pdf" target="_blank"><i class="material-icons">description</i>Rulebook</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=YFuufPRmHfU" target="_blank"><i class="material-icons">ondemand_video</i>Video</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="linkgallery">
+			<img src="media/rulebook/2014.png" title="2014">
+			<div class="description">
+				<div>
+					<a href="http://www.roboconindia.com/pdf/Rule%20Book.pdf" target="_blank"><i class="material-icons">description</i>Rulebook</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/watch?v=TjcOmQl2PZQ" target="_blank"><i class="material-icons">ondemand_video</i>Video</a>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<br>
+
+	<div id="gallery">
+		<hr>
+		<h1>Gallery</h1>
+		<div class="photogallery">
+			<div class="photos">
+				<img src="media/gallery/1.jpg" onclick="openmodal();currentslide(1);">
+			</div>
+			<div class="photos">
+				<img src="media/gallery/2.jpg" onclick="openmodal();currentslide(2);">
+			</div>
+			<div class="photos">
+				<img src="media/gallery/3.jpg" onclick="openmodal();currentslide(3);">
+			</div>
+			<div class="photos">
+				<img src="media/gallery/4.jpg" onclick="openmodal();currentslide(4);">
+			</div>
+			<div class="photos">
+				<img src="media/gallery/5.jpg" onclick="openmodal();currentslide(5);">
+			</div>
+			<div class="photos">
+				<img src="media/gallery/6.jpg" onclick="openmodal();currentslide(6);">
+			</div>
+		</div>			
+	</div>
+
+	<div id="modal">
+		<span class="closeicon" onclick="closemodal()">&times;</span>
+		<span id="slideNo"></span>
+		<a class="prev" onclick="changeslide(-1)">&#10094;</a>
+		
+		<div class="slides">
+			<img src="media/gallery/1.jpg" title="Robocon 2017">
+		</div>
+		<div class="slides">
+			<img src="media/gallery/2.jpg" title="Robocon 2017">
+		</div>
+		<div class="slides">
+			<img src="media/gallery/3.jpg" title="Robocon 2017">
+		</div>
+		<div class="slides">
+			<img src="media/gallery/4.jpg" title="Robocon 2016">
+		</div>
+		<div class="slides">
+			<img src="media/gallery/5.jpg" title="Technotron 2016">
+		</div>
+		<div class="slides">
+			<img src="media/gallery/6.jpg" title="Robocon 2014">
+		</div>
+
+    	<a class="next" onclick="changeslide(1)">&#10095;</a>
+	</div>
+
+	<br>
+
+	<div id="sponsorus">
+		<hr>
+		<h1>Sponsor us</h1>
+
+		<h2>Why sponsor us?</h2>
+		<h3>For title sponsors</h3>
+			<p>
+				Name of the team after the name of the company along with all the benefits mentioned below for co-sponsors.
+			</p>
+			<p>
+				Availability of team and robots for company's promotional events.
+			</p>
+		<h3>For co-sponsors</h3>
+			<p>
+				Live Telecast of the game will be broadcasted on Doordarshan.
+			</p>
+			<p>
+				Promotion of Company in annual technical events of SFIT like Mosaic and IRIS.
+			</p>
+			<p>	
+				Stalls in Mosaic and IRIS.
+			</p>
+			<p>	
+				Company's name and logo on the apparels.
+			</p>
+			<p>	
+				Logo and Name of the sponsor will be displayed as official sponsors of SFIT ROBOCON Team 
+			</p>
+			<p>		
+				 Logo on T-shirts worn by the team in college festivals and other occasions.
+			</p>
+			<p>	 
+				Distribution of company's vouchers or merchandises at Workshop.    
+			</p>
+			<p>	
+				Technical seminars and workshops would be conducted on behalf of sponsors.
+			</p>
+			<p>	    
+				Company name and logo on the accessories as well as the transport vehicles used by the team members. 
+			</p>
+	</div>
+
+	<br>
+
+</div> <!-- End of conatiner. No margin for below div-->
+<div id="footer">
+	<div id="contactus">
+		<div id="rawlogo">
+			<img src="media/rawlogo.png">
+		</div>
+		<div id="contactinfo">
+			B/203,<b> ST. Francis Institute of Technology</b>
+			<br>
+			Mt. Poinsur, SVP road, Borivali (W),
+				<br>
+			Mumbai- 400 103
+		</div>
+	</div>
+	<div id="footer_icon_container">
+		<div class="footericon">
+			<a href="https://www.facebook.com/pg/RoboconAtSfit/photos/?ref=page_internal" target="_blank"><img src="media/footer icons/facebook.png"></a>
+		</div>	
+	</div>
+	<div id="author">Designed by &nbsp;<a href="https://www.linkedin.com/in/jagdish-chaudhary-618688103" target="_blank">Jagdish Chaudhary</div>
+	<br>
+</div>
+
+</body>
+</html>
