@@ -1,1 +1,1 @@
-# RAW_Website
+Robotics & Automation Wing (RAW), SFIT 
