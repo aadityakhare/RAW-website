@@ -370,6 +370,9 @@ h1{
 #sponsorus p:before{
 	content: '\21AA';
 } 
+#form{
+	overflow: auto;
+}
 
 #footer{
 	color: #f2f2f2;
